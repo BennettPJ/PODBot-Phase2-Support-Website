@@ -12,6 +12,11 @@ body {
     background-color: #f4f4f9;
     color: #333;
 }
+/* Spacer Styling */
+.spacer {
+    margin-top: 20px; /* Add space above the element */
+    margin-bottom: 20px; /* Add space below the element */
+}
 
 /* Header Styling */
 header {
@@ -110,58 +115,40 @@ a:hover {
 }
 
 .bot-container {
-    text-align: right; /* Align text to the right */
+    text-align: left; /* Align text to the left */
 }
 
 .image-container {
     text-align: center; /* Center the image */
     margin-top: 10px; /* Add some space above the image if needed */
-}
-
-.logo-container {
-    text-align: center; /* Center the logo */
-}
-
-.responsive-image {
-    width: 100%; /* Make the image take up 100% of its container's width */
-    max-width: 300px; /* Ensure the image doesn't exceed 300px in width */
-    height: auto; /* Maintain the aspect ratio */
-}
-
-.left-align {
-    text-align: left; /* Ensure text is right-aligned */
-}
-
-.spacer{
-    margin-top: 20px; /* Add space above the element */
-}
-
-.pdf-viewer {
-    width: 100%;
-    height: 600px; /* Adjust height as needed */
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 40px;
-}
-.image-container {
     display: flex;
     justify-content: center; /* Centers images horizontally */
     gap: 20px; /* Adds space between images */
 }
 
 .image-container img {
-    max-width: 90%; /* Increases image size */
+    max-width: 70%; /* Increases image size */
     height: auto; /* Maintains aspect ratio */
 }
 
 .image-caption {
-    font-size: 0.8em; /* Slightly larger font size for captions */
+    font-size: 0.8em; /* Slightly smaller font size for captions */
     text-align: center; /* Aligns text below each image */
     margin-top: 5px; /* Adds some space between image and caption */
 }
 
+.logo-container {
+    display: flex; /* Aligns images side by side */
+    justify-content: center; /* Centers them in the container */
+    gap: 20px; /* Adds spacing between the images */
+}
 
-
+.logo-image {
+    width: 200px; /* Sets consistent width */
+    height: 200px; /* Sets consistent height */
+    object-fit: cover; /* Ensures the images fit within the dimensions without being stretched */
+    margin: 10px; /* Adds some spacing around the images */
+}
 
 /* Responsive Styling */
 @media (max-width: 768px) {
