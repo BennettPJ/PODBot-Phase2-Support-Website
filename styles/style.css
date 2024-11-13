@@ -136,6 +136,14 @@ a:hover {
     margin-top: 20px; /* Add space above the element */
 }
 
+.pdf-viewer {
+    width: 100%;
+    height: 600px; /* Adjust height as needed */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
 
 /* Responsive Styling */
 @media (max-width: 768px) {
