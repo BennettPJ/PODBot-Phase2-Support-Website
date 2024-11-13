@@ -167,4 +167,8 @@ a:hover {
     main {
         padding: 15px;
     }
+    .logo-image {
+        width: 100px; /* Reduces size on smaller screens */
+        height: 100px; /* Matches reduced width */
+    }
 }
