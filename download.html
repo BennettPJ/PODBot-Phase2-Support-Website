@@ -26,8 +26,22 @@
         <section class="download-section">
             <p>Download and install the custom PODBot Phase II app on your tablet to manage missions and configurations directly from your device.</p>
             <div class="download-button-container">
-                <a href="https://github.com/BennettPJ/PODBot-Phase2/releases/download/V1.0/PODBotP2_V1.apk" class="download-button">Download App</a>
+                <!--<a href="https://github.com/BennettPJ/PODBot-Phase2/releases/download/V1.0/PODBotP2_V1.apk" class="download-button">Download App</a> -->
             </div>
+
+            <script>
+                document.getElementById('download-button').addEventListener('click', function () {
+                    const password = prompt('Enter the password to download the app:');
+                    const correctPassword = 'PBot-P2-ABEEMS-2025'; 
+            
+                    if (password === correctPassword) {
+                        window.location.href = 'https://github.com/BennettPJ/PODBot-Phase2/releases/download/V1.0/PODBotP2_V1.apk';
+                    } else {
+                        alert('Incorrect password. Please try again.');
+                    }
+                });
+            </script>
+
             <p><strong>Compatibility:</strong> Android 10.0 and above</p>
             <p><strong>Release Date:</strong>TBD</p>
             <p><strong>Source: </strong><a href="https://github.com/BennettPJ/PODBot-Phase2">https://github.com/BennettPJ/PODBot-Phase2</a></p>
